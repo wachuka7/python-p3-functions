@@ -4,14 +4,25 @@ def greet_programmer():
     print("Hello, programmer!")
 greet_programmer()
 
-def greet(name):
-    pass
+def greet(name="programmer"):
+    print(f'Hello, {name}!')
+greet("Naureen")    
 
 def greet_with_default(name="programmer"):
-    pass
+    print(f'Hello, {name}!')
+greet_with_default()
+greet_with_default("Sunny")
+
 
 def add(num1, num2):
-    pass
+    print(num1+num2)
+    return 45 + 55;
+
 
 def halve(number):
-    pass
+    if not isinstance(number, (int, float)):
+        return None
+    print(number/2)
+    return(100/2)
+   
+        
